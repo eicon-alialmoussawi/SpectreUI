@@ -1,0 +1,211 @@
+#dashboard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "user user packages packages""user user license-start license-end""notifications settings features features";
+    gap: 30px;
+    line-height: 1.3;
+}
+
+#dashboard .text-light {
+    color: #919191 !important;
+}
+
+#dashboard .text-dark {
+    color: #131816 !important;
+}
+
+#dashboard label.chk-wrap {
+    display: inline-grid;
+    grid-template: 19px/var(--chk-w) 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: normal;
+    -webkit-margin-end: 15px;
+    margin-inline-end: 15px;
+}
+
+#dashboard>section {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#dashboard>section .section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#dashboard section section:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#dashboard section section .section-title {
+    font-size: small;
+    font-weight: normal;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+
+#dashboard #packages {
+    grid-area: packages;
+}
+
+
+
+#dashboard #settings {
+    grid-area: settings;
+}
+
+
+
+/*==================================
+  USER
+  ================================*/
+
+#dashboard #user {
+    grid-area: user;
+    display: grid;
+    grid-template: auto auto auto/auto 1fr;
+    grid-template-areas: "pic name""pic company""pic country";
+    -moz-column-gap: 30px;
+    column-gap: 25px;
+    row-gap: 0;
+    font-size: normal;
+}
+
+#dashboard #user #profile-pic {
+    height: 182px;
+    aspect-ratio: 1/1;
+    background-color: var(--color-2);
+    border-radius: 15px;
+    grid-area: pic;
+    background: var(--color-2) url("../images/avatar.svg") center center/auto 50% no-repeat;
+}
+
+#dashboard #user .section-title {
+    margin-bottom: 0;
+}
+
+#dashboard #user section {
+    font-size: larger;
+}
+
+/*==================================
+  PACKAGES
+  ================================*/
+
+#dashboard #packages .packages-wrap {
+    display: grid;
+    grid-template: auto/repeat(4, 1fr);
+    gap: 15px;
+    height: 65px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0 15px 0 0
+}
+
+#dashboard #packages .packages-wrap .package {
+    border: 1px solid var(--color-2);
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--color-2);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* #dashboard #packages .packages-wrap .package::before {
+    content: "Package";
+    display: block;
+    font-size: smaller;
+    font-weight: 400;
+    color: #212529;
+} */
+
+
+#dashboard #packages .packages-wrap .package.subscribed {
+    background-color: var(--color-2);
+    color: #fff;
+}
+
+#dashboard #packages .packages-wrap .package.subscribed::before {
+    color: #fff;
+}
+
+/*==================================
+  LICENSES
+  ================================*/
+
+#dashboard #license-start {
+    grid-area: license-start;
+}
+
+#dashboard #license-end {
+    grid-area: license-end;
+}
+
+/*==================================
+  NOTIFICATIONS
+  ================================*/
+
+#dashboard #notifications {
+    grid-area: notifications;
+}
+
+#dashboard #notifications ul {
+    max-height: 340px;
+    overflow: auto;
+}
+
+#dashboard #notifications li {
+    list-style-type: disc;
+    list-style-position: outside;
+    -webkit-margin-start: 20px;
+    margin-inline-start: 20px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+#dashboard #notifications li::marker {
+    font-size: x-large;
+    color: #999;
+}
+
+#dashboard #notifications li.new::marker {
+    color: var(--color-2);
+}
+
+/*==================================
+  FEATURES
+  ================================*/
+
+#dashboard #features {
+    grid-area: features;
+}
+
+#dashboard #features table {
+    border: 1px solid var(--color-2);
+    border-collapse: initial;
+    border-radius: 15px;
+    color: inherit
+}
+
+#dashboard #features table td {
+    color: inherit;
+    border: none;
+    padding: 10px 25px;
+}
+
+#dashboard #features table td:first-child {
+    text-align: start;
+}
+
+#dashboard #features table i {
+    color: var(--color-2)
+}

@@ -1,0 +1,13 @@
+.awards-view-table th {
+    color: #10a9de;
+}
+
+.awards-view-table-div p {
+    text-align: center;
+}
+
+.header-table-div {
+    width: 400px;
+    -webkit-margin-start: 40%;
+            margin-inline-start: 40%;
+}

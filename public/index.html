@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Tools for spectrum benchmarking calculations, together with a complete database of spectrum awards across all bands." />
+    <meta name="author" content="Integrated Digital Systems" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/public_pages/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/public_pages/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/public_pages/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/public_pages/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/public_pages/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/public_pages/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/public_pages/favicons/browserconfig.xml" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    /> -->
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <!-- <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    /> -->
+    <!-- iCheck -->
+    <!-- <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    /> -->
+    <!-- JQVMap -->
+    <!-- <link rel="stylesheet" href="%PUBLIC_URL%/plugins/jqvmap/jqvmap.min.css" /> -->
+
+    <!-- overlayScrollbars -->
+    <!-- <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    /> -->
+    <!-- Daterange picker -->
+    <!-- <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/plugins/daterangepicker/daterangepicker.css"
+    /> -->
+    <!-- summernote -->
+    <!-- <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/plugins/summernote/summernote-bs4.css"
+    /> -->
+    <!-- Google Font: Source Sans Pro -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
+      rel="stylesheet"
+    /> -->
+
+    <!-- index plugins -->
+    <link id="indexPlugins" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/indexMainPlugins.css" />
+
+
+    <!-- public inner webpage styles -->
+    <link id="publicInnerWebStyles" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/allPublicInner.css" disabled />
+
+    <!-- public rtl inner webpage styles -->
+    <link id="publicInnerRTLWebStyles" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/allPublicRTLInner.css" disabled />
+
+    <!-- index ltr styles -->
+    <link id="publicWebLTRStyles" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/allPublicLTRCss.css" disabled />
+
+    <!-- index rtl styles -->
+    <link id="publicWebRTLStyles" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/allPublicRTLCss.css" disabled />
+    <link id="forIndexAndInner" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/custom.css" />
+    <link id="forInnerOnly" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/custom-inner.css" disabled />
+    <link id="indexSpectreIcons" rel="stylesheet" href="%PUBLIC_URL%/public_pages/css/fonts/spectre/css/spectre.css" />
+
+    <script>
+        console.log("window.location.pathname", window.location.pathname);
+        var publicWebRTLStyles = document.getElementById("publicWebRTLStyles");
+        var publicWebLTRStyles = document.getElementById("publicWebLTRStyles");
+        var publicInnerWebStyles = document.getElementById("publicInnerWebStyles");
+        var forIndexAndInner = document.getElementById("forIndexAndInner");
+        var forInnerOnly = document.getElementById("forInnerOnly");
+        var indexSpectreIcons = document.getElementById("indexSpectreIcons");
+        var path = window.location.href;
+        if (path.indexOf('Default') > 0 || path.indexOf('AwardsMenuTest') > 0 || path.indexOf('Pricing') > 0 || path.indexOf('Valuations') > 0 || path.indexOf('Benchmark') > 0 || path.indexOf('Trends') > 0 || path.indexOf('PublicSocioEconomics') > 0 || path.indexOf('Account') > 0 || path.indexOf('AboutView') > 0 || path.indexOf('FQAView') > 0 || path.indexOf('GlossaryView') > 0 || path.indexOf('GettingStartedView') > 0) {
+            publicInnerWebStyles.removeAttribute("disabled");
+            forIndexAndInner.removeAttribute("disabled");
+            forInnerOnly.removeAttribute("disabled");
+            publicWebLTRStyles.setAttribute("disabled", "disabled");
+            publicWebRTLStyles.setAttribute("disabled", "disabled");
+            indexSpectreIcons.setAttribute("disabled", "disabled");
+        }
+        else {
+            if (window.location.pathname === "/") {
+                publicInnerWebStyles.setAttribute("disabled", "disabled");
+                forInnerOnly.setAttribute("disabled", "disabled");
+                forIndexAndInner.removeAttribute("disabled");
+                indexSpectreIcons.removeAttribute("disabled");
+            } else {
+                publicInnerWebStyles.setAttribute("disabled", "disabled");
+                publicWebLTRStyles.setAttribute("disabled", "disabled");
+                publicWebRTLStyles.setAttribute("disabled", "disabled");
+                forIndexAndInner.setAttribute("disabled", "disabled");
+                forInnerOnly.setAttribute("disabled", "disabled");
+                indexSpectreIcons.setAttribute("disabled", "disabled");
+            }
+        }
+    </script>
+
+    <title>Spectre</title>
+</head>
+
+<body class="
+      color-custom
+      style-default
+      button-default
+      layout-full-width
+      no-content-padding
+      header-transparent
+      minimalist-header-no
+      sticky-header sticky-tb-color
+      ab-hide
+      subheader-both-left
+      menu-link-color
+      menuo-right menuo-no-borders
+      mobile-tb-hide mobile-side-slide mobile-mini-mr-ll
+      tablet-sticky
+      mobile-header-mini mobile-sticky
+      tr-header
+      be-reg-209621
+    ">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="%PUBLIC_URL%/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="%PUBLIC_URL%/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="%PUBLIC_URL%/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="%PUBLIC_URL%/plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="%PUBLIC_URL%/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="%PUBLIC_URL%/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="%PUBLIC_URL%/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="%PUBLIC_URL%/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="%PUBLIC_URL%/plugins/moment/moment.min.js"></script>
+    <script src="%PUBLIC_URL%/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="%PUBLIC_URL%/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="%PUBLIC_URL%/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="%PUBLIC_URL%/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="%PUBLIC_URL%/dist/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="%PUBLIC_URL%/dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="%PUBLIC_URL%/dist/js/demo.js"></script>
+
+    <!-- Public Pages -->
+    <script src="%PUBLIC_URL%/public_pages/js/jquery-2.1.4.min.js"></script>
+
+    <script src="%PUBLIC_URL%/public_pages/js/mfn.menu.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/jquery.plugins.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/jquery.jplayer.min.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/animations/animations.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/translate3d.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/scripts.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/email.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/js/iconic-multiselect-dev/dist/multi-select-min.js"></script>
+    <script src="%PUBLIC_URL%/public_pages/plugins/slick-1.8.1/slick/slick.min.js"></script>
+</body>
+<!-- Theme style -->
+<link rel="stylesheet" href="%PUBLIC_URL%/dist/css/adminlte.min.css" />
+
+</html>

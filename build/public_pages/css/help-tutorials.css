@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+    #help-tutorials .button {
+        margin-top: 15px!important;
+    }
+}

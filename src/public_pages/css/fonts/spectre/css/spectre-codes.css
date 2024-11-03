@@ -1,0 +1,25 @@
+
+.spectre-valuation:before { content: '\e800'; } /* '' */
+.spectre-awards:before { content: '\e801'; } /* '' */
+.spectre-benchmark:before { content: '\e802'; } /* '' */
+.spectre-socio-economy:before { content: '\e803'; } /* '' */
+.spectre-trends:before { content: '\e804'; } /* '' */
+.spectre-price:before { content: '\e805'; } /* '' */
+.spectre-search:before { content: '\e806'; } /* '' */
+.spectre-minus-circle:before { content: '\e807'; } /* '' */
+.spectre-avatar:before { content: '\e812'; } /* '' */
+.spectre-filters-population:before { content: '\e816'; } /* '' */
+.spectre-filters-discount-rate:before { content: '\e817'; } /* '' */
+.spectre-filters-license-year:before { content: '\e818'; } /* '' */
+.spectre-filters-min-gdpc:before { content: '\e819'; } /* '' */
+.spectre-filters-awards-from:before { content: '\e81a'; } /* '' */
+.spectre-filters-awards-to:before { content: '\e81b'; } /* '' */
+.spectre-filters-max-gdpc:before { content: '\e81c'; } /* '' */
+.spectre-val-dist:before { content: '\e820'; } /* '' */
+.spectre-val-regress:before { content: '\e821'; } /* '' */
+.spectre-val-bench:before { content: '\e822'; } /* '' */
+.spectre-select-countires:before { content: '\e823'; } /* '' */
+.spectre-angle-left:before { content: '\f104'; } /* '' */
+.spectre-angle-right:before { content: '\f105'; } /* '' */
+.spectre-angle-up:before { content: '\f106'; } /* '' */
+.spectre-angle-down:before { content: '\f107'; } /* '' */

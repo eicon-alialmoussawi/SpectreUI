@@ -1,0 +1,11 @@
+input:checked+.slider:before {
+    transform: translateX(-26px);
+}
+
+.admin-custom-scrollbar::-webkit-scrollbar-thumb {
+    box-shadow: inset -10px 10px 10px 10px black;
+}
+
+.main-sidebar::-webkit-scrollbar-thumb {
+    box-shadow: inset -10px 10px 10px 10px #222;
+}

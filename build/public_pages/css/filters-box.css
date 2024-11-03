@@ -1,0 +1,326 @@
+#filters-box {
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    margin-top: var(--top-bar-height) !important;
+    font-size: .85em;
+    box-shadow: 0 0 20px 0 #00000055;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35px;
+    z-index: 1;
+    overflow: auto;
+    transition: top .3s ease;
+}
+
+
+#filters-box .wrap {
+    display: grid;
+    grid-template: auto/230px 445px auto 155px 180px 250px;
+    padding: 5px 0 0;
+}
+
+
+#filters-box .form-group label {
+    color: var(--color-2-d);
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template: 19px/101px 1fr;
+    align-items: center;
+    line-height: 1em;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#filters-box .form-group label .multi-select {
+    width: 100%;
+}
+
+#filters-box .form-group {
+    margin-bottom: 5px;
+}
+
+#filters-box select,
+#filters-box input:not([type="checkbox"]):not([type="radio"]),
+#filters-box textarea,
+#band-selection-modal input[type="search"] {
+    color: currentColor;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    font-size: inherit;
+    border-color: #ccc;
+    background-color: white;
+    border-radius: var(--input-border-radius);
+    padding: 0 2px;
+    align-self: start;
+}
+
+#filters-box select:focus,
+#filters-box input:not([type="checkbox"]):focus,
+#filters-box textarea:focus,
+#band-selection-modal input[type="search"]:focus {
+    border-color: #aaa;
+}
+
+#filters-box label.chk-wrap {
+    grid-template: 19px/var(--chk-w) 1fr;
+}
+
+#filters-box .include-awards-grid label.chk-wrap {
+    grid-template: 19px/var(--chk-w) 100px;
+}
+
+#filters-box label.min-max-wrap {
+    grid-template: auto/65px 1fr 1fr;
+}
+
+#filters-box #bandSelection label {
+    grid-template: 19px/auto 1fr;
+}
+
+
+/* radio  */
+
+input[type="radio"] {
+    display: grid;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    place-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="radio"]+span {
+    color: #aaa;
+    transition: all .3s;
+}
+
+input[type="radio"]:not(:checked):hover,
+input[type="radio"]:checked {
+    border: 5px solid var(--color-2);
+}
+
+:root {
+    --input-height: 25px;
+}
+
+.rmsc {
+    --rmsc-main: #4285f4;
+    --rmsc-hover: #f1f3f5;
+    --rmsc-selected: #e2e6ea;
+    --rmsc-border: #ccc;
+    --rmsc-gray: #aaa;
+    --rmsc-bg: #fff;
+    --rmsc-p: 1px 10px;
+    --rmsc-radius: 4px;
+}
+
+.rmsc .item-renderer {
+    align-items: center;
+}
+
+.rmsc .options {
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.rmsc .search input {
+    margin: 0;
+    padding: 0 5px;
+}
+
+.rmsc .dropdown-heading {
+    padding: 0 5px;
+}
+
+label .select {
+    width: 120px;
+}
+
+#filters-box [data-title]::before {
+    content: attr(data-title);
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#filters-box [data-title] [data-title]::before {
+    color: #999
+}
+
+#filters-box [data-title] {
+    padding: 0 10px
+}
+
+#filters-box .wrap>div:not(:last-child) {
+    -webkit-border-end: 1px solid #e0e0e0;
+    border-inline-end: 1px solid #e0e0e0;
+}
+
+#filters-box label.lbl-icon-left {
+    grid-template: auto/auto 1fr;
+}
+
+#filters-box label.lbl-icon-left>span {
+    display: grid;
+    grid-template: auto/20px 1fr;
+    gap: 5px;
+}
+
+#Top_bar.is-sticky a.action_button {
+    top: 85%
+}
+
+
+#filters-box [data-title="Band Selection"] label {
+    grid-template: auto/45px 1fr;
+}
+
+#filters-box [data-title="Analysis"] label {
+    grid-template: auto/95px 1fr;
+}
+
+#filters-box .scrollable.bs-scrollable {
+    -webkit-padding-end: 18px;
+    padding-inline-end: 18px;
+}
+
+#band-selection-modal label {
+    display: grid;
+    grid-template: auto/50px 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+#band-selection-modal label input[type="search"] {
+    width: 100%
+}
+
+#band-selection-modal .scrollable {
+    -webkit-padding-end: 10px;
+    padding-inline-end: 10px;
+}
+
+#filters-box .open-modal-button {
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #777;
+    font-size: inherit;
+}
+
+.tbl-actions {
+    display: inline-grid;
+    grid-template: auto/1fr 1fr 1fr;
+    gap: 4px
+}
+
+.tbl-actions-valuation {
+    display: inline-grid !important;
+    grid-template: auto/1fr !important;
+    gap: 4px !important;
+}
+
+.tbl-actions .btn {
+    background-color: #f5f8fa;
+    color: #b5b5c3;
+    border: none;
+}
+
+.tbl-actions .btn:hover {
+    color: var(--color-2)
+}
+
+#table-content .remove-row {
+    width: 20px;
+    height: 20px;
+    fill: #B5B5C3;
+    transition: fill .3s ease;
+    cursor: pointer;
+}
+
+#table-content .remove-row:hover {
+    width: 20px;
+    fill: #F64E60;
+}
+
+.filter-actions {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 5px 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.filter-actions .btn {
+    margin: 0 !important;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+#toggle-filters {
+    color: var(--color-2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto;
+}
+
+#toggle-filters i {
+    margin: 0 !important;
+    font-size: 15px;
+    padding: 0;
+    border-radius: 0;
+    border: none !important;
+    color: var(--blue);
+    background-color: transparent !important;
+}
+
+.strike-through {
+    position: relative;
+}
+
+
+
+
+/* #table-content table tbody>tr.strike-through {
+    background-color: rgba(255, 0, 0, 0.1) !important
+} */
+
+
+input[type="checkbox"].deselect {}
+
+input[type="checkbox"]+span {
+    color: #aaa;
+    transition: all .3s;
+}
+
+input[type="checkbox"].deselect:not(:checked):hover,
+input[type="checkbox"].deselect:checked {
+    /* background: #bd1d1d; */
+    background: #666;
+    border: none;
+}
+
+/* input[type="checkbox"]:checked {
+    background-color: var(--color-2)
+} */
+
+input[type="checkbox"].deselect:checked::before {
+    /* content: "x"; */
+    content: "↑";
+    font-weight: bold;
+    line-height: 1;
+}

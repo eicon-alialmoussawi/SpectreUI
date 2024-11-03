@@ -1,0 +1,11 @@
+:root {
+    --color-1: hsla(225, 74%, 15%, 1);
+    --color-2: #10ace0;
+    --color-2-l: #88dbf7;
+    --color-2-d: #0a6e8f;
+    --color-3: #39c6d0;
+    --copy-text: #99a6c7;
+    --container-width: 1470px;
+    --container-margin: 45px;
+    --section-padding: 70px;
+}

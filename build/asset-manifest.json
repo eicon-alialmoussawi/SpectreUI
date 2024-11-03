@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e699a40.chunk.css",
+    "main.js": "/static/js/main.4d33e383.chunk.js",
+    "main.js.map": "/static/js/main.4d33e383.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8a07c02c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8a07c02c.js.map",
+    "static/css/2.421d24c7.chunk.css": "/static/css/2.421d24c7.chunk.css",
+    "static/js/2.7b79f249.chunk.js": "/static/js/2.7b79f249.chunk.js",
+    "static/js/2.7b79f249.chunk.js.map": "/static/js/2.7b79f249.chunk.js.map",
+    "static/js/3.3399bd58.chunk.js": "/static/js/3.3399bd58.chunk.js",
+    "static/js/3.3399bd58.chunk.js.map": "/static/js/3.3399bd58.chunk.js.map",
+    "static/js/4.58161a9a.chunk.js": "/static/js/4.58161a9a.chunk.js",
+    "static/js/4.58161a9a.chunk.js.map": "/static/js/4.58161a9a.chunk.js.map",
+    "static/js/5.74fc11b5.chunk.js": "/static/js/5.74fc11b5.chunk.js",
+    "static/js/5.74fc11b5.chunk.js.map": "/static/js/5.74fc11b5.chunk.js.map",
+    "static/js/6.44cdf927.chunk.js": "/static/js/6.44cdf927.chunk.js",
+    "static/js/6.44cdf927.chunk.js.map": "/static/js/6.44cdf927.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.421d24c7.chunk.css.map": "/static/css/2.421d24c7.chunk.css.map",
+    "static/css/main.9e699a40.chunk.css.map": "/static/css/main.9e699a40.chunk.css.map",
+    "static/js/2.7b79f249.chunk.js.LICENSE.txt": "/static/js/2.7b79f249.chunk.js.LICENSE.txt",
+    "static/js/3.3399bd58.chunk.js.LICENSE.txt": "/static/js/3.3399bd58.chunk.js.LICENSE.txt",
+    "static/js/4.58161a9a.chunk.js.LICENSE.txt": "/static/js/4.58161a9a.chunk.js.LICENSE.txt",
+    "static/js/5.74fc11b5.chunk.js.LICENSE.txt": "/static/js/5.74fc11b5.chunk.js.LICENSE.txt",
+    "static/media/flags.5bc53ca7.png": "/static/media/flags.5bc53ca7.png",
+    "static/media/fr.05c7984c.svg": "/static/media/fr.05c7984c.svg",
+    "static/media/gb.3b671736.svg": "/static/media/gb.3b671736.svg",
+    "static/media/home_bg.47eea97d.png": "/static/media/home_bg.47eea97d.png",
+    "static/media/lastPage.cc01a4bb.png": "/static/media/lastPage.cc01a4bb.png",
+    "static/media/left.8a627bd1.png": "/static/media/left.8a627bd1.png",
+    "static/media/logo2.ee31c060.svg": "/static/media/logo2.ee31c060.svg",
+    "static/media/sa.f3d773c7.svg": "/static/media/sa.f3d773c7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a07c02c.js",
+    "static/css/2.421d24c7.chunk.css",
+    "static/js/2.7b79f249.chunk.js",
+    "static/css/main.9e699a40.chunk.css",
+    "static/js/main.4d33e383.chunk.js"
+  ]
+}

@@ -1,0 +1,143 @@
+#home-screenshots {
+    padding-top: 70px;
+    background: #09153a;
+}
+
+#home-screenshots .slider {
+    background-color: var(--color-1-d)
+}
+
+#home-screenshots .slider::after {
+    content: "";
+    position: absolute;
+    top: -1.4vw;
+    transform: translatex(-51%);
+    width: 38vw;
+    inset-inline-start: 50%;
+    background: url(../images/screenshots/laptop.png) no-repeat center/contain;
+    aspect-ratio: 900 / 532;
+    pointer-events: none;
+    transform-origin: 50% 0;
+}
+
+#home-screenshots .slider .slide {
+    transition: opacity .3s;
+    aspect-ratio: 700 / 433;
+    cursor: -webkit-grab;
+    cursor: grab;
+    width: 100%;
+}
+
+#home-screenshots .slider .slick-slide:not(.slick-current) img {
+    opacity: .3;
+}
+
+#home-screenshots .slick-list::before,
+#home-screenshots .slick-list::after {
+    content: "";
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    background: linear-gradient(to right, var(--color-1), hsla(225, 74%, 15%, 0));
+    z-index: 1
+}
+
+#home-screenshots .slick-list::after {
+    inset-inline-start: unset;
+    inset-inline-end: 0;
+    background: linear-gradient(to left, var(--color-1), hsla(225, 74%, 15%, 0));
+}
+
+#home-screenshots .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translatey(-50%);
+    margin: 0;
+    inset-inline-start: 15px;
+    background-color: transparent;
+    font-size: xxx-large;
+    color: var(--color-2)
+}
+
+#home-screenshots .slick-arrow::after {
+    display: none;
+}
+
+#home-screenshots .slick-next {
+    inset-inline-start: unset;
+    inset-inline-end: 15px;
+}
+
+#home-screenshots h2 {
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+#home-screenshots .slider-wrap {
+    aspect-ratio: 1 / .23
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+    .home-screenshots-p {
+        margin-top: 10%;
+    }
+
+    #home-screenshots .slider::after {
+        top: -1.4vw;
+        transform: translatex(-51%);
+        width: 100vw;
+    }
+
+    #home-screenshots .slider-wrap {
+        aspect-ratio: 1 / 0.55;
+    }
+}
+
+.help-and-tutorial {
+    padding-bottom: 0px;
+    background-color: #09153a;
+    background-image: url("images/home_internet2_sectionbg5.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.help-and-tutorial h2 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+@media (max-width: 500px) {
+
+    #home-screenshots .slick-list::before,
+    #home-screenshots .slick-list::after {
+        opacity: .3;
+    }
+}
+
+.slick-current>div>img {
+    opacity: 1 !important;
+}
+
+#home-screenshots .slider .grabbing {
+    cursor: grabbing !important;
+    cursor: -webkit-grabbing !important;
+}
+
+#home-screenshots .slick-slide {
+    float: left !important;
+}
+
+@media (min-width: 2001px) {
+    #home-screenshots .slider::after {
+        top: -0.6vw;
+        transform: translatex(-51%);
+        width: 24vw;
+    }
+
+    #home-screenshots .slider-wrap {
+        aspect-ratio: 1 / .15;
+    }
+}

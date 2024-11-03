@@ -1,0 +1,17 @@
+#welcome {
+    background: linear-gradient(to right, #42749d 30%, #42749d33 100%), url(../images/default-background.jpg) center center/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+#welcome h1 {
+    position: absolute;
+    top: 20vh;
+    inset-inline-start: 10vw;
+    color: #fff;
+    font-weight: 100;
+}
+
+#welcome h1 b {
+    display: block;
+}

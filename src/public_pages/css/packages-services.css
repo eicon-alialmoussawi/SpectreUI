@@ -1,0 +1,118 @@
+#home-packages {
+    padding-top: var(--section-padding);
+    background: #09153a;
+}
+
+#home-packages .items-list {
+    list-style: none;
+    display: grid;
+    grid-template: auto/1fr 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: var(--section-padding);
+}
+
+#home-packages .items-list>li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #163358;
+    padding: 30px;
+    align-items: center;
+    color: #fff;
+}
+
+#home-packages .items-list>li header {
+    display: grid;
+    grid-template: auto auto/60px 1fr;
+    grid-template-areas: "icon heading" "icon pkg-title";
+    gap: 0 15px;
+    justify-items: start;
+    margin-bottom: 15px;
+    text-align: left
+}
+
+#home-packages .items-list>li header small {
+    font-size: small
+}
+
+#home-packages .items-list>li header img {
+    grid-area: icon;
+    width: 60px;
+    height: 60px;
+}
+
+#home-packages .items-list>li header h5 {
+    grid-area: heading;
+    margin: 0;
+}
+
+#home-packages .items-list>li header span {
+    grid-area: pkg-title;
+    font-size: larger;
+}
+
+#home-packages .items-list>li * {
+    color: currentColor;
+}
+
+#home-services-list, #home-services-list li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#home-services-list li {
+    display: grid;
+    grid-template: auto/auto 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--copy-text)
+}
+
+#home-services-list li::before {
+    content: url("../images/home_internet2_pic5.png");
+}
+
+.packages-services h2 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    #home-packages .items-list {
+        margin-bottom: var(--section-padding)
+    }
+}
+
+@media (max-width: 767px) {
+    #home-packages .button {
+        margin-top: 15px!important
+    }
+    #home-packages {
+        padding-bottom: var(--section-padding);
+    }
+    #home-packages>.section_wrapper {
+        gap: 30px 120px;
+        grid-template: auto/1fr;
+    }
+    #home-packages>.section_wrapper>div:first-child {
+        margin-bottom: 30px;
+    }
+    #home-packages .items-list {
+        grid-template: auto/1fr;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    #home-packages .mcb-wrap:first-child>.mcb-wrap-inner {
+        grid-template: auto/1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .packages-services {
+        margin-top: 10% !important;
+    }
+}

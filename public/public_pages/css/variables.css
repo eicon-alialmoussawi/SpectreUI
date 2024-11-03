@@ -1,0 +1,13 @@
+:root {
+    --color-1: hsla(225, 74%, 15%, 1);
+    --color-2: hsl(195, 87%, 47%);
+    --color-2-l: hsl(195, 87%, 75%);
+    --color-2-d: hsl(195, 87%, 30%);
+    --color-3: rgb(57, 198, 208);
+    --copy-text: #9eaccf;
+    --container-width: 1470px;
+    --container-margin: 45px;
+    --section-padding: 70px;
+    --input-border-radius: 4px;
+    --font-family: "Exo 2", "Cairo", Arial, Tahoma, sans-serif;
+}

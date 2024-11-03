@@ -1,0 +1,26 @@
+#home-about {
+    padding-top: 160px;
+}
+
+@media (max-width: 1600px) {
+    #home-about {
+        padding-top: var(--section-padding);
+    }
+}
+
+@media (max-width: 1400px) {
+    #home-about {
+        padding-top: 0;
+    }
+}
+
+#home-about-img {
+    aspect-ratio: 780/547;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 60px;
+    border: 1px solid var(--color-2);
+    box-sizing: border-box;
+    overflow: hidden;
+}

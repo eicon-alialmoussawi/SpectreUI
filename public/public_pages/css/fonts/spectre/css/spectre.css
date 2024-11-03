@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'spectre';
+  src: url('../font/spectre.eot?442293');
+  src: url('../font/spectre.eot?442293#iefix') format('embedded-opentype'),
+       url('../font/spectre.woff2?442293') format('woff2'),
+       url('../font/spectre.woff?442293') format('woff'),
+       url('../font/spectre.ttf?442293') format('truetype'),
+       url('../font/spectre.svg?442293#spectre') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'spectre';
+    src: url('../font/spectre.svg?442293#spectre') format('svg');
+  }
+}
+*/
+[class^="spectre-"]:before, [class*=" spectre-"]:before {
+  font-family: "spectre";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.spectre-valuation:before { content: '\e800'; } /* '' */
+.spectre-awards:before { content: '\e801'; } /* '' */
+.spectre-benchmark:before { content: '\e802'; } /* '' */
+.spectre-socio-economy:before { content: '\e803'; } /* '' */
+.spectre-trends:before { content: '\e804'; } /* '' */
+.spectre-price:before { content: '\e805'; } /* '' */
+.spectre-search:before { content: '\e806'; } /* '' */
+.spectre-minus-circle:before { content: '\e807'; } /* '' */
+.spectre-package-standard:before { content: '\e810'; } /* '' */
+.spectre-package-premium:before { content: '\e811'; } /* '' */
+.spectre-package-elite:before { content: '\e812'; } /* '' */
+.spectre-val-dist:before { content: '\e813'; } /* '' */
+.spectre-training:before { content: '\e814'; } /* '' */
+.spectre-analysis:before { content: '\e815'; } /* '' */
+.spectre-filters-population:before { content: '\e816'; } /* '' */
+.spectre-filters-discount-rate:before { content: '\e817'; } /* '' */
+.spectre-filters-license-year:before { content: '\e818'; } /* '' */
+.spectre-filters-min-gdpc:before { content: '\e819'; } /* '' */
+.spectre-filters-awards-from:before { content: '\e81a'; } /* '' */
+.spectre-filters-awards-to:before { content: '\e81b'; } /* '' */
+.spectre-filters-max-gdpc:before { content: '\e81c'; } /* '' */
+.spectre-valuation-1:before { content: '\e81f'; } /* '' */
+.spectre-consultancy:before { content: '\e820'; } /* '' */
+.spectre-val-regress:before { content: '\e821'; } /* '' */
+.spectre-val-bench:before { content: '\e822'; } /* '' */
+.spectre-select-countires:before { content: '\e823'; } /* '' */
+.spectre-check-disc:before { content: '\e82a'; } /* '' */
+.spectre-benchmark-1:before { content: '\e82b'; } /* '' */
+.spectre-award:before { content: '\e82c'; } /* '' */
+.spectre-pricing:before { content: '\e82d'; } /* '' */
+.spectre-socio-economic:before { content: '\e82e'; } /* '' */
+.spectre-trends-1:before { content: '\e82f'; } /* '' */
+.spectre-angle-left:before { content: '\f104'; } /* '' */
+.spectre-angle-right:before { content: '\f105'; } /* '' */
+.spectre-angle-up:before { content: '\f106'; } /* '' */
+.spectre-angle-down:before { content: '\f107'; } /* '' */
